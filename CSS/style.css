@@ -17,6 +17,7 @@ ul{
 .header{
     margin-bottom: 90px;
 }
+
 .container{
     max-width: 1220px;
     padding: 0 10px;
@@ -59,10 +60,15 @@ body{
 .top{
     margin-bottom: 150px;
 }
+.top-slide{
+    min-height: 700px;
+}
 .top-slide__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .top-slide__content{
     flex-basis: 183px;
