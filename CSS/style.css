@@ -61,9 +61,11 @@ body{
     margin-bottom: 150px;
 }
 .top-slide{
-    min-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .top-slide__inner{
+    min-height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,11 +91,21 @@ body{
     margin-bottom: 20px;
 }
 .top-slide__btn{
+    margin-left: auto;
     color: #7449BB;
     text-transform: uppercase;
     font-weight: 700px;
     padding: 21px 55px;
     border: 1px solid #7449BB;
     display: inline-block;
+}
 
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    content: none;
+}
+.container-arrow{
+    position: relative;
+    padding: 0;
+    max-width: 1200px;
 }
