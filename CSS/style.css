@@ -122,6 +122,7 @@ body{
 }
 .about{
     margin-bottom: 150px;
+    overflow: hidden;
 }
 .about__inner{
     padding-left: 200px;
@@ -137,12 +138,38 @@ body{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 .about__textbox{
-
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
 .about__text{
-
+    flex-basis: 387px;
+    line-height: 1.2;
 }
-.about__text--bold{
 
+.about__text p{
+    margin-bottom: 15px;
+}
+
+.about__text--bold{
+    font-weight: 700;
+}
+
+.about__item--title{
+    margin-bottom: 20px;
+}
+
+.about__slider{
+    width: 1600px;
+    padding-left: 200px;
+    margin-left: -200px;
+    padding-bottom: 20px;
+}
+
+.about--arrow{
+    margin-left: -198px;
 }
