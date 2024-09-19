@@ -123,7 +123,7 @@ body{
     right: auto;
 }
 .about{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     overflow: hidden;
 }
 .about__inner{
@@ -166,7 +166,7 @@ body{
 }
 
 .about__slider{
-    width: 1600px;
+    width: 1800px;
     padding-left: 200px;
     margin-left: -200px;
     padding-bottom: 20px;
@@ -181,12 +181,14 @@ body{
 .container-arrow, .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 1;
 }
-
+.accordeon{
+    margin-bottom: 223px;
+}
 .accordeon__inner{
     padding-left: 200px;
 }
 .accordeon__item{
-    border-bottom: 1px solid #0000;
+    border-bottom: 1px solid #000000;
     padding: 50px 101px 20px 0;
     position: relative;
 }
@@ -198,4 +200,35 @@ body{
     background-image: url(../images/accordion-arrow.svg);
     right: 85px;
     top: 50px;
+}
+.accordeon__item:last-child::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/accordion-img.jpg);
+    width: 65px;
+    height: 120px;
+    left: 264px;
+    bottom: -73px;
+}
+.accordeon__triger{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordeon__triger-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    flex-basis: 300px;
+    margin-bottom: 47px;
+}
+.accordeon__triger--text{
+    flex-basis: 387px;
+    margin-right: 104px;
+}
+.accordeon__content{
+    padding-top: 20px;
+    display: none;
+}
+.accordeon__content p{
+    margin-bottom: 10px;
 }
